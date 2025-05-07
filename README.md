@@ -10,6 +10,57 @@ StreamFlow intelligently adjusts the polling frequency for system resource data 
 
 ---
 
+## **StreamFlow Project Architecture**
+
+Below is the architecture of the StreamFlow project:
+
+```mermaid
+graph LR
+    title StreamFlow Project Architecture
+    A[StreamFlow Project] --> B[src]
+    B --> C[main.rs]
+    B --> D[terminal_ui.rs]
+    B --> E[data_provider.rs]
+    B --> F[data_receiver.rs]
+    B --> G[interval_support.rs]
+    B --> H[stream_service.rs]
+
+    subgraph TerminalUI
+        D --> I[Terminal UI Logic]
+    end
+
+    subgraph DataProvider
+        E --> J[Data Handling]
+    end
+
+    subgraph DataReceiver
+        F --> K[Data Input/Receiver Logic]
+    end
+
+    subgraph IntervalSupport
+        G --> L[Interval Optimization]
+    end
+
+    subgraph StreamService
+        H --> M[Main Stream Logic]
+    end
+
+    style A fill:#f2f2f2,stroke:#333,stroke-width:2px
+    style B fill:#e0e0e0,stroke:#333,stroke-width:2px
+    style C fill:#c2d9f7,stroke:#333,stroke-width:2px
+    style D fill:#c3e6cb,stroke:#333,stroke-width:2px
+    style E fill:#e2e3e5,stroke:#333,stroke-width:2px
+    style F fill:#e2e3e5,stroke:#333,stroke-width:2px
+    style G fill:#c3e6cb,stroke:#333,stroke-width:2px
+    style H fill:#e2e3e5,stroke:#333,stroke-width:2px
+    style I fill:#e3f2fd,stroke:#333,stroke-width:2px
+    style J fill:#f5c6cb,stroke:#333,stroke-width:2px
+    style K fill:#f5c6cb,stroke:#333,stroke-width:2px
+    style L fill:#f5c6cb,stroke:#333,stroke-width:2px
+    style M fill:#f5c6cb,stroke:#333,stroke-width:2px
+    
+---
+
 ## **Key Features:**
 
 - **Dynamic Polling Frequency**: Configurable polling intervals, with support for adjustments to optimize performance.
