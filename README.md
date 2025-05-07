@@ -11,7 +11,7 @@
 
 StreamFlow intelligently adjusts the polling frequency for system resource data (CPU, memory, disk) based on configurable intervals. It aims to provide accurate and real-time metrics while maintaining efficiency in terms of system resources, making it ideal for continuous monitoring of system performance.
 
-![UsageDetails](https://github.com/user-attachments/assets/6a5fd03c-c6d2-4906-80fe-2c76c1b212d5)
+![UsageDetails](https://github.com/user-attachments/assets/45d62c39-2645-487b-a373-6feaed22f9fb)
 
 ---
 
