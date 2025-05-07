@@ -2,11 +2,16 @@
 
 **StreamFlow** is a real-time data streaming system designed to efficiently process and display system resource usage metrics. It leverages dynamic polling intervals, ensuring the system consumes resources efficiently while displaying up-to-date information for CPU, memory, and disk usage.
 
+
+<img width="1052" alt="image" src="https://github.com/user-attachments/assets/84f06c19-6fb8-4d9a-b703-0623af18e361" />
+
 ---
 
 ## **Concept**
 
 StreamFlow intelligently adjusts the polling frequency for system resource data (CPU, memory, disk) based on configurable intervals. It aims to provide accurate and real-time metrics while maintaining efficiency in terms of system resources, making it ideal for continuous monitoring of system performance.
+
+![UsageDetails](https://github.com/user-attachments/assets/45d62c39-2645-487b-a373-6feaed22f9fb)
 
 ---
 
