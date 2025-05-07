@@ -16,7 +16,6 @@ Below is the architecture of the StreamFlow project:
 
 ```mermaid
 graph LR
-    title StreamFlow Project Architecture
     A[StreamFlow Project] --> B[src]
     B --> C[main.rs]
     B --> D[terminal_ui.rs]
