@@ -1,9 +1,0 @@
-[package]
-name = "StreamFlow"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-sysinfo = "0.35.0" 
-ratatui = "0.29.0" 
-tokio = { version = "1", features = ["full"] }
