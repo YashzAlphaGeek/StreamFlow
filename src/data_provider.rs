@@ -48,10 +48,16 @@ impl DataProvider {
     }
 
     pub fn generate_ascii_graph(value: f32) -> String {
-        let filled = (value / 5.0).round() as usize;
-        let bar = "█".repeat(filled);
-        format!("[{}] {:.2}%", bar, value)
+        let total_bars: f32 = 30.0; 
+        let filled_bars = (value * total_bars / 100.0).round() as usize; 
+        let empty_bars = total_bars as usize - filled_bars; 
+    
+        let filled = "█".repeat(filled_bars);
+        let empty = " ".repeat(empty_bars);
+    
+        format!("[{}{}] {:.2}%", filled, empty, value)
     }
+    
 
     pub fn subscribe(&mut self, stream_name: &str) -> String {
         format!("subscription_key_for_{}", stream_name)
